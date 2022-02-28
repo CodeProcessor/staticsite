@@ -7,10 +7,11 @@
 </head>
 <body>
 <h1>Hello Welcome to My Static Site</h1>
-{% if name %}
-<h1>Hello {{name}}!</h1>
-{% else %}
-<h1>Hello World</h1>
-{% endif %}
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const name = urlParams.get('name')
+    console.log(name);
+</script>
 </body>
 </html>
