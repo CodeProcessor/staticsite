@@ -1,5 +1,13 @@
 body {
     margin: 0;
-    background: aqua;
+    background: black;
     text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 50px;
 }

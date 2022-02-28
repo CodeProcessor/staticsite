@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Thank you, we will be in touch with you soon</h1>
-<img id="myImg" src="assets/awesome.png" alt="Company Logo" width="600">
+<img id="myImg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Company Logo" width="600">
 <script>
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -20,7 +20,7 @@
         } else if (name === "wildland") {
             document.getElementById("myImg").src = "assets/wildland.jpeg";
         } else {
-            document.getElementById("myImg").src = "assets/awesome.png";
+            document.getElementById("myImg").src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
         }
     }
     console.log(name);
