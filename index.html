@@ -6,17 +6,24 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1>Hello Welcome to My Static Site</h1>
-<img id="myImg" src="assets/c1.jpeg" alt="C1">
+<h1>Thank you, we will be in touch with you soon</h1>
 <script>
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const name = urlParams.get('name')
     if (name !== null) {
-        document.write(`<h1>Hello ${name}</h1>`)
-        document.getElementById("myImg").src = "assets/c2.jpeg";
+        if (name === "moore") {
+            document.getElementById("myImg").src = "assets/moore.jpeg";
+        } else if (name === "pmg") {
+            document.getElementById("myImg").src = "assets/pmg.jpeg";
+        } else if (name === "wildland") {
+            document.getElementById("myImg").src = "assets/wildland.jpeg";
+        } else {
+            document.getElementById("myImg").src = "assets/awesome.png";
+        }
     }
+    const name = urlParams.get('name')
     console.log(name);
 </script>
+<img id="myImg" src="assets/awesome.png" alt="Company Logo">
 </body>
 </html>
