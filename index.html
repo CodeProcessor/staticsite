@@ -10,6 +10,7 @@
 <script>
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
+    const name = urlParams.get('name')
     if (name !== null) {
         if (name === "moore") {
             document.getElementById("myImg").src = "assets/moore.jpeg";
@@ -21,9 +22,8 @@
             document.getElementById("myImg").src = "assets/awesome.png";
         }
     }
-    const name = urlParams.get('name')
     console.log(name);
 </script>
-<img id="myImg" src="assets/awesome.png" alt="Company Logo">
+<img id="myImg" src="assets/awesome.png" alt="Company Logo" width="600">
 </body>
 </html>
